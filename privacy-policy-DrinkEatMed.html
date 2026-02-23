@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DrinkEatMed - Privacy Policy</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.last-updated {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-top: 25px;
+  color: #00e5ff;
+}
+
+p {
+  line-height: 1.7;
+  margin-top: 8px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background: #00e5ff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00bcd4;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Privacy Policy</h1>
+  <div class="last-updated">Last Updated: 16 February 2026</div>
+
+  <div id="policyContent">
+
+    <h2>1. Introduction</h2>
+    <p>
+      DrinkEatMed ("we", "our", or "us") respects your privacy. This Privacy Policy explains
+      how we collect, use, and protect your information when you use our mobile application.
+    </p>
+
+    <h2>2. Information We Collect</h2>
+    <p>
+      We do not collect personally identifiable information unless explicitly provided by you.
+      The app may store locally:
+    </p>
+    <p>
+      • Reminder schedules (water, food, medicine)  
+      • Notification preferences  
+      • App usage settings  
+      • Streak and tracking data  
+    </p>
+    <p>
+      All such data is stored locally on your device.
+    </p>
+
+    <h2>3. Permissions</h2>
+    <p>
+      DrinkEatMed may request the following permissions:
+    </p>
+    <p>
+      • Notification Permission – to send reminders  
+      • Exact Alarm Permission – for precise reminder timing  
+    </p>
+    <p>
+      These permissions are used strictly for core app functionality.
+    </p>
+
+    <h2>4. Advertising</h2>
+    <p>
+      Our app may display ads using third-party advertising services such as Google AdMob.
+      These services may collect anonymous data such as device information for personalized ads.
+      We do not control how third-party advertisers use your data.
+    </p>
+
+    <h2>5. Data Storage</h2>
+    <p>
+      All reminder data and preferences are stored locally on your device.
+      We do not sell, share, or transmit your personal data to external servers.
+    </p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>
+      DrinkEatMed does not knowingly collect data from children under 13.
+      If you believe a child has provided personal information, please contact us.
+    </p>
+
+    <h2>7. Security</h2>
+    <p>
+      We implement reasonable safeguards to protect your data.
+      However, no digital storage method is 100% secure.
+    </p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time.
+      Any changes will be reflected on this page with an updated date.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <p>
+      If you have any questions regarding this Privacy Policy,
+      you may contact us at:
+    </p>
+    <p>
+      Email: support@drinkeatmed.app
+    </p>
+
+  </div>
+
+  <button onclick="copyPolicy()">Copy Privacy Policy</button>
+
+  <div class="footer">
+    © 2026 DrinkEatMed. All rights reserved.
+  </div>
+</div>
+
+<script>
+function copyPolicy() {
+  const text = document.getElementById("policyContent").innerText;
+  navigator.clipboard.writeText(text).then(function() {
+    alert("Privacy Policy copied successfully!");
+  }, function() {
+    alert("Failed to copy text.");
+  });
+}
+</script>
+
+</body>
+</html>
