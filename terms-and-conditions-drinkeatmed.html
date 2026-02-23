@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DrinkEatMed - Terms & Conditions</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.last-updated {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-top: 25px;
+  color: #00e5ff;
+}
+
+p {
+  line-height: 1.7;
+  margin-top: 8px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background: #00e5ff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00bcd4;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Terms & Conditions</h1>
+  <div class="last-updated">Last Updated: 16 February 2026</div>
+
+  <div id="termsContent">
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>
+      By downloading, installing, or using DrinkEatMed ("the App"),
+      you agree to comply with and be bound by these Terms & Conditions.
+      If you do not agree, please do not use the App.
+    </p>
+
+    <h2>2. Use of the Application</h2>
+    <p>
+      DrinkEatMed is designed to provide reminder services for water intake,
+      meals, medicines, and custom health-related tasks.
+      The App is intended for informational and reminder purposes only.
+    </p>
+
+    <h2>3. Not Medical Advice</h2>
+    <p>
+      The App does not provide medical advice.
+      It is not a substitute for professional healthcare guidance.
+      Always consult a qualified healthcare provider for medical concerns.
+    </p>
+
+    <h2>4. User Responsibilities</h2>
+    <p>
+      You are responsible for:
+    </p>
+    <p>
+      • Ensuring reminder information is accurate  
+      • Taking medications as prescribed by your doctor  
+      • Verifying alarms and notifications function properly  
+    </p>
+    <p>
+      We are not liable for missed reminders due to device settings,
+      battery optimization, or system restrictions.
+    </p>
+
+    <h2>5. Permissions</h2>
+    <p>
+      The App may request access to notifications and exact alarm permissions
+      to provide reminder functionality. You may revoke these permissions
+      at any time in your device settings.
+    </p>
+
+    <h2>6. Advertising</h2>
+    <p>
+      The App may display third-party advertisements through services such as
+      Google AdMob. We are not responsible for the content of third-party ads.
+    </p>
+
+    <h2>7. Intellectual Property</h2>
+    <p>
+      All content, branding, logos, and design elements of DrinkEatMed
+      are the intellectual property of the developer.
+      Unauthorized reproduction is prohibited.
+    </p>
+
+    <h2>8. Limitation of Liability</h2>
+    <p>
+      DrinkEatMed shall not be held liable for any direct or indirect damages
+      resulting from the use or inability to use the App,
+      including missed reminders or system failures.
+    </p>
+
+    <h2>9. Changes to Terms</h2>
+    <p>
+      We reserve the right to update or modify these Terms at any time.
+      Continued use of the App after changes constitutes acceptance
+      of the revised Terms.
+    </p>
+
+    <h2>10. Contact Information</h2>
+    <p>
+      For questions regarding these Terms & Conditions,
+      please contact:
+    </p>
+    <p>
+      Email: support@drinkeatmed.app
+    </p>
+
+  </div>
+
+  <button onclick="copyTerms()">Copy Terms & Conditions</button>
+
+  <div class="footer">
+    © 2026 DrinkEatMed. All rights reserved.
+  </div>
+</div>
+
+<script>
+function copyTerms() {
+  const text = document.getElementById("termsContent").innerText;
+  navigator.clipboard.writeText(text).then(function() {
+    alert("Terms & Conditions copied successfully!");
+  }, function() {
+    alert("Failed to copy text.");
+  });
+}
+</script>
+
+</body>
+</html>
